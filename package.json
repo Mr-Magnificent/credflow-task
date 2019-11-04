@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "compression": "^1.7.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "knex": "^0.20.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "objection": "^1.6.11"
+  },
+  "scripts": {
+    "start": "DEBUG=app:* nodemon server.js",
+    "lint": "eslint --fix-dry-run ."
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0"
+  }
+}
