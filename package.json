@@ -1,18 +1,29 @@
 {
   "dependencies": {
+    "antd": "^3.25.0",
     "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "faker": "^4.1.0",
     "knex": "^0.20.1",
     "morgan": "^1.9.1",
+    "mysql2": "^2.0.0",
     "nodemon": "^1.19.4",
     "objection": "^1.6.11"
   },
   "scripts": {
     "start": "DEBUG=app:* nodemon server.js",
-    "lint": "eslint --fix-dry-run ."
+    "lint": "eslint --fix-dry-run .",
+    "create-migration": "knex migrate:make",
+    "latest": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed-make": "knex seed:make",
+    "seed-run": "knex seed:run"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0"
   }
